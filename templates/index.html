@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Image To Pdf</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+    <div class="headingcenter" ><center>IMAGE TO PDF CONVERT</center></div>
+  
+   <form method="post" class="file-uploader" action="/converted" enctype="multipart/form-data">
+    <div class="file-uploader__message-area">
+      <p>Select a file to upload</p>
+    </div>
+    <div class="file-chooser">
+      <input class="file-chooser__input" type="file" name="img" >
+    </div>
+    <input class="file-uploader__submit-button" type="submit" value="Upload">
+  </form>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script  src="{{ url_for('static', filename='dist/script.js')}}"></script>
+  
+      <div class="foot" ><center>Developed by<br><a href="https://www.linkedin.com/in/prathamesh-rathod-0547721a0/"> Prathamesh Rathod</center></a></div>
+
+      
+
+</body>
+</html>
